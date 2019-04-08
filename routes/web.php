@@ -12,9 +12,19 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome.welcome');
 });
 
+Route::get('/course-detail', function () {
+    return view('welcome.course-details');
+})->name('course-details');
+
 Auth::routes();
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('shopping-detail', function () {
+        return view('welcome.shopping-detail');
+    })->name('shopping-detail'); 
+});
 
 Route::get('/home', 'HomeController@index')->name('home');
