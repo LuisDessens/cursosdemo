@@ -24,7 +24,19 @@ Auth::routes();
 Route::group(['middleware' => ['auth']], function () {
     Route::get('shopping-detail', function () {
         return view('welcome.shopping-detail');
-    })->name('shopping-detail'); 
+    })->name('shopping-detail');
+
+    Route::get('my-courses', function () {
+        return view('users.my-courses');
+    })->name('my-courses');
+
+    Route::get('my-courses/course-detail', function () {
+        return view('users.my-course-details');
+    })->name('my-course-details');
+
+    Route::get('chapter', function () {
+        return view('users.chapter');
+    })->name('chapter');
 });
 
 Route::get('/home', 'HomeController@index')->name('home');

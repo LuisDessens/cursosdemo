@@ -318,7 +318,7 @@
                         <div class="card" style="width: 16rem;">
                             <img src="https://i.udemycdn.com/course/240x135/782428_b5cf_3.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <div class="card-title h5">Diseño Web Profesional El Curso Completo, Practic...</div>
+                                <div class="card-title h5">Diseño Web Profesional El Curso Completo</div>
                                 <div class="card-text text-muted">Carlos Arturo Esparza</div>
                                 <div class="mt-2 mb-2">
                                     <span class="text-warning">
